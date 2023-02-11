@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TTUCU</string>
+    <string name="Open_navigation">Open Navigation</string>
+    <string name="close_navigation">Close Navigation</string>
+</resources>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LS"
+    android:background="#ADB3CF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/backToLs"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back"
+                ></Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LITERATURE SECRETARY"
+                android:layout_gravity="center_vertical"
+                ></TextView>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/updateson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+        </ListView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/programme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E2D7F4"
+        android:visibility="invisible"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/fellowship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter The Fellowship"
+            ></EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <EditText
+                android:id="@+id/dayOfProgramme"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Day"></EditText>
+            <EditText
+                android:id="@+id/timeToMeet"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:hint="Time"></EditText>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/venue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Venue"></EditText>
+
+        <EditText
+            android:id="@+id/editProgramme"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Description"></EditText>
+        <Button
+            android:id="@+id/sendProgramme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textSize="30dp"
+            android:textColor="#6D7FE6"
+            android:background="@android:color/transparent"></Button>
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:id="@+id/updatechurchInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E2D7F4"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/selectMinistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#0B26A3"
+                android:layout_marginTop="10dp"
+                ></Spinner>
+
+            <EditText
+                android:id="@+id/churchVision"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:background="#A9B1D3"
+                android:layout_height="100dp"
+                android:hint="Vision"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/churchMission"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:background="#A9B1D3"
+                android:layout_height="100dp"
+                android:hint="Mission"></EditText>
+            <EditText
+                android:id="@+id/aboutUs"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#A9B1D3"
+                android:textAlignment="center"
+                android:layout_height="100dp"
+                android:hint="About"></EditText>
+            <Button
+                android:id="@+id/sendToMinistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="send"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="#6D7FE6"
+                android:background="@android:color/transparent"></Button>
+
+            <EditText
+                android:id="@+id/history"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="300dp"
+                android:background="#AEB5D3"
+                android:textAlignment="center"
+                android:hint="History"></EditText>
+
+
+            <Button
+                android:id="@+id/sendInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textColor="#6D7FE6"
+                android:background="@android:color/transparent"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/updateSemSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_marginTop="50dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Date:"
+                android:textSize="20dp"
+                android:textColor="#4A548C"></TextView>
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="yyyy/mm/dd"
+                android:textColor="#4A548C"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Speaker:"
+                android:textSize="20dp"
+                android:textColor="#4A548C"></TextView>
+
+            <EditText
+                android:id="@+id/speaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Speaker"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Programmer:"
+                android:textSize="20dp"
+                android:textColor="#4A548C"></TextView>
+
+            <EditText
+                android:id="@+id/programmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Programmer"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tpc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Topic:"
+                android:textSize="20dp"
+                android:textColor="#4A548C"></TextView>
+
+            <EditText
+                android:id="@+id/topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Topic"></EditText>
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/sendSchedule"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:backgroundTint="@color/blue"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ADB3CF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+        <Button
+            android:id="@+id/backToMinistries"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back"
+            ></Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MINISTRY"
+            android:layout_gravity="center_vertical"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#1C1725"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            ></TextView>
+        <Switch
+            android:id="@+id/join_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="join"
+            android:layout_marginLeft="10dp"
+            android:textColor="#320483"
+            android:textSize="15dp"
+            ></Switch>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#B0B6D5">
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textSize="20dp"
+            android:textFontWeight="70"
+            android:layout_marginTop="10dp"
+            android:textColor="#1433DF"></TextView>
+
+            <TextView
+                android:id="@+id/updateMembers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ministry Notification"
+                android:textFontWeight="70"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:visibility="invisible"
+                android:textColor="#1433DF"></TextView>
+
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/ministryMembersList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#CAD1F4"
+        android:textColor="#000105"
+        ></ListView>
+
+
+
+</LinearLayout>

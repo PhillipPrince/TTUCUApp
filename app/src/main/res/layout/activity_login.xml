@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#ADB3CF"
+    android:padding="10dp"
+    tools:context=".registration">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="71dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/culogo" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/nameError"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="*"
+                android:textColor="#EE002C"
+                ></TextView>
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="@drawable/shapes"
+                android:textColor="#1B4F72"
+                ></EditText>
+            <TextView
+                android:id="@+id/userNameError"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#EE002C"
+                android:text="*"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Username"
+                android:padding="10dp"
+                android:inputType="text"
+                android:background="@drawable/shapes"
+                android:textColor="#1B4F72"
+                ></EditText>
+
+            <TextView
+                android:id="@+id/emailError"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#EE002C"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Email"
+                android:padding="10dp"
+                android:background="@drawable/shapes"
+                android:inputType="textEmailAddress"
+                android:textColor="#1B4F72"
+                ></EditText>
+            <TextView
+                android:id="@+id/phoneError"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#EE002C"
+                ></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="+254"
+                android:padding="10dp"
+                android:background="@drawable/shapes"
+                android:textColor="#1B4F72"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="168dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Phone No"
+                android:padding="10dp"
+                android:background="@drawable/shapes"
+                android:textColor="#1B4F72"
+                android:inputType="phone"
+                ></EditText>
+        </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/regError"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#EE002C"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/regno"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Reg No"
+                android:background="@drawable/shapes"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#1B4F72"
+                ></EditText>
+
+
+            <TextView
+                android:id="@+id/passError"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#EE002C"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Password"
+                android:textColor="#1B4F72"
+                android:padding="10dp"
+                android:background="@drawable/shapes"
+                android:inputType="textPassword"
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Confirm Password"
+                android:padding="10dp"
+                android:background="@drawable/shapes"
+                android:inputType="textPassword"
+                android:textColor="#1B4F72"></EditText>
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/genderError"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#EE002C"
+                        ></TextView>
+                    <Spinner
+                        android:id="@+id/gender"
+                        android:layout_width="210dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:hint="Gender"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="#1B4F72"
+                        ></Spinner>
+
+
+                    <TextView
+                        android:id="@+id/courseError"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#EE002C"
+                        ></TextView>
+
+                    <Spinner
+                        android:id="@+id/course"
+                        android:layout_width="210dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:textColor="#1B4F72"
+                        ></Spinner>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="submit"
+                    ></Button>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:text="  Already have an accoubt"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/loginInstead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Login"
+                    android:layout_gravity="center"
+                    android:textColor="#0429F4"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

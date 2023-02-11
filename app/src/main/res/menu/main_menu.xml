@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Profile">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/profile"
+                    android:title="My profile"
+                    android:icon="@drawable/ic_baseline_account_circle_24"
+
+                    ></item>
+
+                <item
+                    android:id="@+id/logout"
+                    android:title="Logout"
+                    ></item>
+            </group>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+
+
+
+        <item
+            android:id="@+id/semSchedule"
+            android:icon="@drawable/schedule"
+            android:title="Semester Schedule"></item>
+        <item
+            android:id="@+id/leadership"
+            android:title="Leadership"
+            android:icon="@drawable/leaders"
+            ></item>
+
+        <item
+            android:id="@+id/give"
+            android:title="Give"
+            android:icon="@drawable/ic_baseline_attach_money_24"
+
+            ></item>
+        <item
+            android:id="@+id/youtube"
+            android:title="You tube"></item>
+
+
+
+    </group>
+
+
+
+</menu>

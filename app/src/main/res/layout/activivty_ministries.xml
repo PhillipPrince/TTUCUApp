@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Ministries"
+    android:orientation="horizontal"
+    >
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightBlue"
+
+            >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Church Ministries"
+                            android:textSize="30dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/blue"
+                            ></TextView>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:background="@color/lighter"
+                            android:layout_marginTop="10dp">
+
+
+
+                                <Button
+                                    android:id="@+id/music"
+                                    android:layout_width="128dp"
+                                    android:layout_height="66dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/music"
+                                    android:background="@drawable/music"
+                                    tools:ignore="MissingConstraints"
+                                    tools:layout_editor_absoluteX="16dp"
+                                    tools:layout_editor_absoluteY="16dp"></Button>
+
+                                <Button
+                                    android:id="@+id/evangelism"
+                                    android:layout_width="128dp"
+                                    android:layout_height="66dp"
+                                    android:layout_marginLeft="104dp"
+                                    android:background="@drawable/evangelism"
+                                    app:layout_constraintLeft_toRightOf="@id/music"
+                                    tools:ignore="MissingConstraints"
+                                    tools:layout_editor_absoluteY="16dp"></Button>
+
+                                <Button
+                                    android:id="@+id/sundaySchool"
+                                    android:layout_width="128dp"
+                                    android:layout_height="66dp"
+                                    android:layout_marginTop="36dp"
+                                    android:paddingLeft="10dp"
+                                    android:background="@drawable/sundayschool"
+                                    app:layout_constraintTop_toBottomOf="@id/music"
+                                    tools:ignore="MissingConstraints"
+                                    tools:layout_editor_absoluteX="16dp"></Button>
+
+                                <Button
+                                    android:id="@+id/hospitality"
+                                    android:layout_width="128dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="104dp"
+                                    android:layout_marginTop="32dp"
+                                    android:background="@drawable/hospitality"
+                                    app:layout_constraintLeft_toRightOf="@id/sundaySchool"
+                                    app:layout_constraintTop_toBottomOf="@id/evangelism"
+                                    tools:ignore="MissingConstraints"></Button>
+
+                                <Button
+                                    android:id="@+id/hcm"
+                                    android:layout_width="128dp"
+                                    android:layout_height="66dp"
+                                    android:layout_marginTop="36dp"
+                                    android:paddingLeft="10dp"
+                                    android:background="@drawable/hcm"
+                                    app:layout_constraintTop_toBottomOf="@id/sundaySchool"
+                                    tools:ignore="MissingConstraints"
+                                    tools:layout_editor_absoluteX="16dp"></Button>
+
+                                <Button
+                                    android:id="@+id/lighters"
+                                    android:layout_width="128dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="104dp"
+                                    android:layout_marginTop="32dp"
+                                    android:background="@drawable/lighters"
+                                    app:layout_constraintLeft_toRightOf="@id/hcm"
+                                    app:layout_constraintTop_toBottomOf="@id/hospitality"
+                                    tools:ignore="MissingConstraints"></Button>
+
+                                <Button
+                                    android:id="@+id/nurturing"
+                                    android:layout_width="128dp"
+                                    android:layout_height="66dp"
+                                    android:layout_marginTop="36dp"
+                                    android:paddingLeft="10dp"
+                                    android:background="@drawable/nurturing"
+                                    app:layout_constraintTop_toBottomOf="@id/hcm"
+                                    tools:ignore="MissingConstraints"
+                                    tools:layout_editor_absoluteX="16dp"></Button>
+
+                                <Button
+                                    android:id="@+id/intercessory"
+                                    android:layout_width="128dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="104dp"
+                                    android:layout_marginTop="32dp"
+                                    android:background="@drawable/intercessory"
+                                    app:layout_constraintLeft_toRightOf="@id/nurturing"
+                                    app:layout_constraintTop_toBottomOf="@id/lighters"
+                                    tools:ignore="MissingConstraints"></Button>
+
+                                <Button
+                                    android:id="@+id/media"
+                                    android:layout_width="128dp"
+                                    android:layout_height="66dp"
+                                    android:layout_marginTop="36dp"
+                                    android:paddingLeft="10dp"
+                                    android:background="@drawable/media"
+                                    app:layout_constraintTop_toBottomOf="@id/nurturing"
+                                    tools:ignore="MissingConstraints"
+                                    tools:layout_editor_absoluteX="16dp"></Button>
+
+                                <Button
+                                    android:id="@+id/ushering"
+                                    android:layout_width="128dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="104dp"
+                                    android:layout_marginTop="32dp"
+                                    android:background="@drawable/ushering"
+                                    app:layout_constraintLeft_toRightOf="@id/media"
+                                    app:layout_constraintTop_toBottomOf="@id/intercessory"
+                                    tools:ignore="MissingConstraints"></Button>
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+        </ScrollView>
+
+
+</RelativeLayout>
