@@ -34,7 +34,6 @@ public class SQLitebatabase extends SQLiteOpenHelper  {
     public static final String dateToStart="StartingDate";
     public static final String dateToEnd="EndingDate";
     public static final  String eventId="eventId";
-
     public static final String schedule="schedule";
     public static final String sid="scheduleId";
     public static final String date="date";
